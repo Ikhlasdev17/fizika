@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './pages/Home';
+import LayoutComponent from './components/Layout';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home/>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/*" element={<LayoutComponent />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     );
   }
