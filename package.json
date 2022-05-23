@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^4.20.5",
+    "or": "^0.2.0",
     "react": "^18.1.0",
     "react-doc-viewer": "^0.1.5",
     "react-documents": "^1.1.2",
@@ -11,12 +12,18 @@
     "react-file-viewer": "^1.2.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "0.9.5",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "uglify-js": "github:mishoo/UglifyJS2#harmony"
   },
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "uglifyjs-webpack-plugin": "^1.0.0-rc.0"
   }
 }

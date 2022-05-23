@@ -13,7 +13,7 @@ const lectures = [
   {
       id: 2,
       title: '2-lekciya. Materiallıq noqattıń аylаnbаlı háreketi',
-      file: '2-lekciya.docx',
+      file: '2_0-lekciya.docx',
       type: 'docx'
   },
   {
@@ -82,7 +82,14 @@ const lectures = [
       title: '15-lekciya. Elеktrоmаgnit indukciya qubılısı.',
       file: '15-lekciya.docx',
       type: 'docx'
-  }
+  },
+    {
+        id: 14,
+        title: '16-lekciya. Materiallıq noqattıń аylаnbаlı háreketi',
+        file: '2-lekciya.docx',
+        type: 'docx'
+    },
+  
 ] 
 
 

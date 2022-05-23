@@ -8,6 +8,7 @@ import Practices from '../pages/Practices/Practices';
 import Labaratory from '../pages/Labaratory/Labaratory';
 import Details from '../pages/Details/Details';
 import SelfStudy from '../pages/SelfStudy/SelfStudy';
+import Glossary from '../pages/Glassary';
  
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -35,7 +36,7 @@ export default () => {
         <h1 className='logo'><span>F</span>IZIKA</h1>
       <Menu  theme="dark" mode="inline" defaultSelectedKeys={['1']} style={{height: '100vh'}}>
         <Menu.Item key="1">
-          <Link to="/lectures">Bas bet</Link>
+          <Link to="/">Bas bet</Link>
         </Menu.Item>
           <Menu.SubMenu key="sub1" title={<span>Leksiyalar</span>}>
             <Menu.Item key="lectures">
@@ -43,6 +44,9 @@ export default () => {
             </Menu.Item>
             <Menu.Item key="documents">
               <Link to="/lectures/documents">Leksiyalar</Link>
+            </Menu.Item>
+            <Menu.Item key="glassary">
+              <Link to="/lectures/glassary">Glassary</Link>
             </Menu.Item>
           </Menu.SubMenu>
         <Menu.SubMenu key={'sub2'} title={`A'meliyatlar`}> 
@@ -72,6 +76,8 @@ export default () => {
             <Route path='/lectures/docs/:file' element={<Details  title={title} />} />
             <Route path='/practices/docs/:file' element={<Details  title={title} />} />
             <Route path='/self-study' element={<SelfStudy  setTitle={setTitle} />} />
+            <Route path='/lectures/glassary' element={<Glossary  setTitle={setTitle} />} />
+            <Route path='/lectures/glassary/:file' element={<Details  title={title} />} />
             <Route path='/self-study/:file' element={<Details  title={title} />} />
           </Routes>
         </div>

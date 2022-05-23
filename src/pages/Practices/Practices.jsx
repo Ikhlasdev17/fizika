@@ -63,7 +63,13 @@ const practices = [
         title: '13-ámeliy shınıǵıw.',
         file: '13-ameliy.docx',
         type: 'docx'
-    }        
+    },
+    {
+        id: 14,
+        title: '15-ámeliy shınıǵıw.',
+        file: '15-ameliy.docx',
+        type: 'docx'
+    },
 ]
 
 const Practices = ({ setTitle }) => {
