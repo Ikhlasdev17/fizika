@@ -8,6 +8,13 @@ const cources = [
         file: 'glossary.docx',
         type: 'docx'
     },
+    {
+        id: 2,
+        title: 'Glossary 2',
+        file: 'glassary2.docx',
+        type: 'docx'
+    },
+
 ]
 
 const Glossary = ({ setTitle }) => {

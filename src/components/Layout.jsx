@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Menu, SubMenu } from 'antd';
-import { Link, Outlet, Route, Routes } from 'react-router-dom';
+import { Link, Outlet, Route, Routes, useLocation } from 'react-router-dom';
 import Home from '../pages/Home';
 import Slides from '../pages/Lectures/Slides';
 import Documents from '../pages/Lectures/Documents';
@@ -9,6 +9,7 @@ import Labaratory from '../pages/Labaratory/Labaratory';
 import Details from '../pages/Details/Details';
 import SelfStudy from '../pages/SelfStudy/SelfStudy';
 import Glossary from '../pages/Glassary';
+import Certificate from '../pages/Certificate';
  
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -17,6 +18,10 @@ const { Header, Content, Footer, Sider } = Layout;
 
 export default () => {
   const [title, setTitle] = React.useState('Default');
+
+  const location = useLocation();
+
+  console.log(location)
 
   return (
     <Layout hasSider>
@@ -60,6 +65,9 @@ export default () => {
         <Menu.Item key="4">
           <Link to="/self-study">Mustaqil ta'lim</Link>
         </Menu.Item>
+        <Menu.Item key="7">
+          <Link to="/certificate">Ruxsatnama</Link>
+        </Menu.Item>
       </Menu>
     </Sider>
     <Layout className="site-layout" style={{ marginLeft: 300 }}>
@@ -79,6 +87,7 @@ export default () => {
             <Route path='/lectures/glassary' element={<Glossary  setTitle={setTitle} />} />
             <Route path='/lectures/glassary/:file' element={<Details  title={title} />} />
             <Route path='/self-study/:file' element={<Details  title={title} />} />
+            <Route path='/certificate' element={<Certificate />} />
           </Routes>
         </div>
       </Content>

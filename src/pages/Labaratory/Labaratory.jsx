@@ -5,6 +5,12 @@ import { Link } from 'react-router-dom'
 
 const labaratories = [
     {
+        id: 10,
+        title: '1-laboratoriyalıq jumıs. ATVUD MASHINASÍNDA KINEMATIKA HÁM DINAMIKA NÍZAMLARÍN ÚYRENIW',
+        file: 'labaratoriya-new.docx',
+        type: 'docx'
+    },
+    {
         id: 1,
         title: '7-Laboratoriyalıq jumıs. SUYÍQLÍQLARDÍŃ ISHKI SÚYKELIW KOEFFICIENTIN STOKS USÍLÍ MENEN ANÍQLAW',
         file: '7-labara.docx',
@@ -28,6 +34,12 @@ const labaratories = [
         file: '10-labara.docx',
         type: 'docx'
     },
+    {
+        id: 5,
+        title: '2-laboratoriyalıq jumıs. DENELERDIŃ INERCIYA MOMENTLERIN DINAMIKALÍQ USÍL MENEN ANÍQLAW',
+        file: 'labaratoriya-l.docx',
+        type: 'docx'
+    }
 ]
 
 

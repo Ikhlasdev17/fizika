@@ -23,7 +23,7 @@ const Details = ({ title }) => {
             <h1 className='heading'>{title}</h1>
             <button className='btn btn-primary text-white'>
                 <a className='text-white' href={require(`../../asstes/${arr2[0]}.${file}`)} download={require(`../../asstes/${arr2[0]}.${file}`)}>
-                    Download
+                Ju'klep aliw
                 </a>
             </button>
         </div>
