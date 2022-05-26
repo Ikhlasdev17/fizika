@@ -4,9 +4,8 @@ import FileViewer from 'react-file-viewer'
 
 import { useLocation } from 'react-router-dom'
 
-// import file from '../../asstes/1-ameliy.docx'
 
-const Details = ({ title }) => {
+const TestDetails = ({ title }) => {
     const location = useLocation()
 
     const arr = location.pathname.split('/')
@@ -22,7 +21,7 @@ const Details = ({ title }) => {
         <div>
             <h1 className='heading'>{title}</h1>
             <button className='btn btn-primary text-white'>
-                <a className='text-white' href={require(`../../asstes/${arr2[0]}.${file}`)} download={require(`../../asstes/${arr2[0]}.${file}`)}>
+                <a className='text-white' href={require(`../asstes/${arr2[0]}.${'docx'}`)} download={require(`../asstes/${arr2[0]}.${'docx'}`)}>
                 Júklep alıw 
                 </a>
             </button>
@@ -32,12 +31,12 @@ const Details = ({ title }) => {
 
         <div className='viewer-container'>
             <FileViewer
-                fileType={file}
-                filePath={require(`../../asstes/${arr2[0]}.${file}`)}
+                fileType={'pdf'}
+                filePath={require(`../asstes/${arr2[0]}.${'pdf'}`)}
                 />
         </div>
     </div>
   )
 }
 
-export default Details
+export default TestDetails

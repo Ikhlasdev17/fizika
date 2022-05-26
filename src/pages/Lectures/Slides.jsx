@@ -102,7 +102,7 @@ const Slides = ({ setTitle }) => {
   return (
     <div>
         <h5 className="heading">
-            Leksiyalar/Slaydlar
+            Leksiyalar/Prezentaciyalar
         </h5>
 
 

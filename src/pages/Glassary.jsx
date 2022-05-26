@@ -5,15 +5,9 @@ const cources = [
     {
         id: 1,
         title: 'Glossary',
-        file: 'glossary.docx',
-        type: 'docx'
-    },
-    {
-        id: 2,
-        title: 'Glossary 2',
         file: 'glassary2.docx',
         type: 'docx'
-    },
+    }
 
 ]
 

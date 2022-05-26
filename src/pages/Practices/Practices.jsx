@@ -28,6 +28,12 @@ const practices = [
         file: '4-ameliy.docx',
         type: 'docx'
     }, 
+    {
+        id: 5,
+        title: '6-ámeliy shınıǵıw.',
+        file: '6-ameliy.docx',
+        type: 'docx'
+    },
     { 
         id: 7,
         title: '7-ámeliy shınıǵıw.',
@@ -76,7 +82,7 @@ const Practices = ({ setTitle }) => {
   return (
     <div>
         <h5 className="heading">
-            Ameliyatlar
+        Ámeliy shınıǵıwlar
         </h5>
 
 

@@ -14,7 +14,7 @@ const SelfStudy = ({ setTitle }) => {
   return (
       <div>
         <h5 className="heading">
-            Mustaqil ta'lim
+        Óz betinshe tálim shınıǵıwları
         </h5>
 
 

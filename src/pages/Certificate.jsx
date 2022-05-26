@@ -9,7 +9,7 @@ const Certificate = () => {
             <h1 className='heading'>Ruxsatnama</h1>
             <button className='btn btn-primary text-white'>
                 <a className='text-white' href={file} download={file}>
-                    Ju'klep aliw
+                Júklep alıw 
                 </a>
             </button>
         </div>

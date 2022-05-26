@@ -82,14 +82,7 @@ const lectures = [
       title: '15-lekciya. Elеktrоmаgnit indukciya qubılısı.',
       file: '15-lekciya.docx',
       type: 'docx'
-  },
-    {
-        id: 14,
-        title: '16-lekciya. Materiallıq noqattıń аylаnbаlı háreketi',
-        file: '2-lekciya.docx',
-        type: 'docx'
-    },
-  
+  }
 ] 
 
 
@@ -97,7 +90,7 @@ const Documents = ({ setTitle }) => {
   return (
     <div>
       <h5 className="heading">
-            Leksiyalar/Dokumentler
+            Lekciyalar
         </h5>
         <ul className='list'>
             {

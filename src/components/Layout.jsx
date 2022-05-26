@@ -10,6 +10,8 @@ import Details from '../pages/Details/Details';
 import SelfStudy from '../pages/SelfStudy/SelfStudy';
 import Glossary from '../pages/Glassary';
 import Certificate from '../pages/Certificate';
+import Tests from '../pages/Tests';
+import TestDetails from '../pages/TestDetails.jsx';
  
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -38,35 +40,38 @@ export default () => {
 
       width={300}
     >
-        <h1 className='logo'><span>F</span>IZIKA</h1>
+        <h1 className='logo'>FIZIKA <span>I</span></h1>
       <Menu  theme="dark" mode="inline" defaultSelectedKeys={['1']} style={{height: '100vh'}}>
         <Menu.Item key="1">
           <Link to="/">Bas bet</Link>
         </Menu.Item>
-          <Menu.SubMenu key="sub1" title={<span>Leksiyalar</span>}>
+          <Menu.SubMenu key="sub1" title={<span>Lekciyalar</span>}>
             <Menu.Item key="lectures">
-              <Link to="/lectures/slides">Prezidentatsiyalar</Link>
+              <Link to="/lectures/slides">Prezentaciyalar</Link>
             </Menu.Item>
             <Menu.Item key="documents">
-              <Link to="/lectures/documents">Leksiyalar</Link>
+              <Link to="/lectures/documents">Lekciyalar</Link>
             </Menu.Item>
             <Menu.Item key="glassary">
               <Link to="/lectures/glassary">Glassary</Link>
             </Menu.Item>
           </Menu.SubMenu>
-        <Menu.SubMenu key={'sub2'} title={`A'meliyatlar`}> 
+        <Menu.SubMenu key={'sub2'} title={`Ámeliy shınıǵıwlar `}> 
             <Menu.Item key="documents2">
-              <Link to="/practices/documents">A'meliyatlar</Link>
+              <Link to="/practices/documents">Ámeliy shınıǵıwlar </Link>
             </Menu.Item>
         </Menu.SubMenu>
         <Menu.Item key="3">
-          <Link to="/labaratory">Labaratoriya</Link>
+          <Link to="/labaratory">Labaratoriya shınıǵıwları </Link>
         </Menu.Item>
         <Menu.Item key="4">
-          <Link to="/self-study">Mustaqil ta'lim</Link>
+          <Link to="/self-study">Óz betinshe tálim shınıǵıwları </Link>
         </Menu.Item>
         <Menu.Item key="7">
           <Link to="/certificate">Ruxsatnama</Link>
+        </Menu.Item>
+        <Menu.Item key="8">
+          <Link to="/tests">Test sorawları</Link>
         </Menu.Item>
       </Menu>
     </Sider>
@@ -88,6 +93,8 @@ export default () => {
             <Route path='/lectures/glassary/:file' element={<Details  title={title} />} />
             <Route path='/self-study/:file' element={<Details  title={title} />} />
             <Route path='/certificate' element={<Certificate />} />
+            <Route path='/tests' element={<Tests />} />
+            <Route path='/tests/:file' element={<TestDetails  title={title} />} />
           </Routes>
         </div>
       </Content>

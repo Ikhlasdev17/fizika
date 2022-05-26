@@ -11,6 +11,24 @@ const labaratories = [
         type: 'docx'
     },
     {
+        id: 5,
+        title: '2-laboratoriyalıq jumıs. DENELERDIŃ INERCIYA MOMENTLERIN DINAMIKALÍQ USÍL MENEN ANÍQLAW',
+        file: 'labaratoriya-l.docx',
+        type: 'docx'
+    },
+    {
+        id: 6,
+        title: '3-laboratoriyalıq jumıs. OBERBEK MAYATNIGINDE DENELERDIŃ INERCIYA  MOMENTLERIN  ANÍQLAW',
+        file: 'labaratoriya-3.docx',
+        type: 'docx'
+    },
+    {
+        id: 11,
+        title: '6 - laboratoriyalıq jumıs. MEXANIKADA ENERGIYANÍŃ SAQLANÍW NÍZAMLARÍN ÚYRENIW',
+        file: 'labaratoriya-6.docx',
+        type: 'docx'
+    },
+    {
         id: 1,
         title: '7-Laboratoriyalıq jumıs. SUYÍQLÍQLARDÍŃ ISHKI SÚYKELIW KOEFFICIENTIN STOKS USÍLÍ MENEN ANÍQLAW',
         file: '7-labara.docx',
@@ -35,11 +53,37 @@ const labaratories = [
         type: 'docx'
     },
     {
-        id: 5,
-        title: '2-laboratoriyalıq jumıs. DENELERDIŃ INERCIYA MOMENTLERIN DINAMIKALÍQ USÍL MENEN ANÍQLAW',
-        file: 'labaratoriya-l.docx',
+        id: 7,
+        title: '11 - laboratoriyalıq jumıs. ELEKTROSTATIKALÍQ MAYDAN POTENCIAL BÓLISTIRILIWIN ÚYRENIW',
+        file: '11-labara.docx',
         type: 'docx'
-    }
+    },
+    {
+        id: 8,
+        title: '12 – laboratoriyalıq jumıs. ÓTKIZGISH QARSÍLÍQLARÍN UITSTON  KÓPIRI JÁRDEMINDE ÓLSHEW',
+        file: '12-labara.docx',
+        type: 'docx'
+    },
+
+    {
+        id: 9,
+        title: '13 - laboratoriyalıq jumıs. MAGNIT MAYDAN INDUKCIYASÍ HÁM AMPER KÚSHIN ANÍQLAW',
+        file: '13-labara.docx',
+        type: 'docx'
+    },
+    {
+        id: 12,
+        title: '14 - laboratoriyalıq jumıs. TANGENS-BUSSOL JÁRDEMINDE JER MAGNIT MAYDAN KERNEWLILIGINIŃ GORIZONTAL QURAWSHÍSÍN ANÍQLAW',
+        file: '14-labara.docx',
+        type: 'docx'
+    },
+    {
+        id: 13,
+        title: '15 - laboratoriyalıq jumıs. SOLENOID KÓSHERINDEGI MAGNIT MAYDANÍN ÚYRENIW',
+        file: '15-labara.docx',
+        type: 'docx'
+    },
+   
 ]
 
 
@@ -48,7 +92,7 @@ const Labaratory = ({ setTitle }) => {
   return (
     <div>
         <h5 className="heading">
-            Labaratoriyalar
+        Labaratoriya shınıǵıwları
         </h5>
 
 
